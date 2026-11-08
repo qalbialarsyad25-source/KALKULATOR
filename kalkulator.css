@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#FFC93C, #FF9551, #FF4A5A);
+    font-family: system-ui, sans-serif;
+}
+
+.kalkulator {
+    width: 300px;
+    padding: 16px;
+    background: linear-gradient(to bottom, #FFFFFF, #808080);
+    border-radius: 14px;
+}
+
+.identitas {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.layar {
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #111820;
+    color: #fff;
+    text-align: right;
+    border-radius: 8px;
+    min-height: 76px;
+    word-break: break-all;
+}
+
+.riwayat {
+    font-size: 14px;
+    color: #8a97a5;
+    min-height: 20px;
+}
+
+.hasil {
+    font-size: 32px;
+    margin-top: 6px;
+}
+
+.tombol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: orange;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffe8cc;
+}
+
+button:focus-visible {
+    outline: 2px solid #f2b705;
+}
+
+button.operator {
+    background-image: linear-gradient(#FFC93C, #FF9551);
+    color: white;
+}
+
+button.operator:hover {
+    background: #d98f05;
+}
+
+button.hapus {
+    background: #a33b3b;
+    color: white;
+}
+
+button.hapus:hover {
+    background: #b84a4a;
+}
+
+button.clear {
+    grid-column: span 2;
+}
+
+button.nol {
+    grid-column: span 2;
+}
+
+button.sama {
+    grid-column: span 4;
+}

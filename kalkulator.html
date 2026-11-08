@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="kalkulator.css">
+</head>
+<body>
+    <div class="identitas">
+        <div class="nama" id="nama">Nama : Muhammad Qalbi Al Arsyad</div>
+        <div class="nim" id="nim">Nim : 255150701111028</div>
+    </div>
+    <div class="kalkulator">
+        <div class="layar">
+            <div class="riwayat" id="riwayat"></div>
+            <div class="hasil" id="hasil">0</div>
+        </div>
+
+        <div class="tombol">
+            <button class="hapus clear" data-aksi="clear">C</button>
+            <button class="hapus" data-aksi="hapus">Delete</button>
+            <button class="operator" data-op="/">/</button>
+
+            <button data-angka="7">7</button>
+            <button data-angka="8">8</button>
+            <button data-angka="9">9</button>
+            <button class="operator" data-op="*">x</button>
+
+            <button data-angka="4">4</button>
+            <button data-angka="5">5</button>
+            <button data-angka="6">6</button>
+            <button class="operator" data-op="+">+</button>
+
+            <button data-angka="1">1</button>
+            <button data-angka="2">2</button>
+            <button data-angka="3">3</button>
+            <button class="operator" data-op="-">-</button>
+
+            <button data-angka=".">.</button>
+            <button data-angka="0">0</button>
+            <button data-angka=",">,    </button>
+            <button class="sama" data-aksi="sama">=</button>
+        </div>
+    </div>
+
+    <script src="kalkulator.js"></script>
+</body>
+</html>
